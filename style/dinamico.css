@@ -1,0 +1,65 @@
+.rotacion{
+    transform: rotateY(0deg);
+    transition: all 0.5s ease;
+}
+
+.rotacion.move{
+    transform: rotateY(360deg);
+}
+
+
+/* animation */
+
+.box{
+   position: relative;
+   left: 600px;
+   top: 100px;
+  }
+  .globe {
+      border: 2px solid #09011f;
+      border-radius: 50%;
+      height: 140px;
+      /* left: 45%; */
+      overflow: hidden;
+      /* position: relative; */
+      /* top: 26%; */
+      transform: translate(-50%, -50%);
+      width: 140px;
+  }
+  
+  svg {
+      animation: rotation 5s linear 0s infinite;
+    }
+  
+    path {
+      stroke: #000000;
+    }
+  
+    @keyframes rotation {
+      from {
+        transform: translateX(0);
+      }
+      
+      from {
+        transform: translateX(-50%);
+      }
+    }
+  
+  
+    /* mobile */
+    @media(max-width: 700px){
+      .box{
+        left: 50%;
+      }
+    }
+
+
+/* fonts style */
+.fontTitle{
+    font-family: 'Oswald', sans-serif;
+}
+
+
+
+
+

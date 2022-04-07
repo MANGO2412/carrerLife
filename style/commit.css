@@ -1,0 +1,41 @@
+#form1{
+    width:  300px;
+    height: 300px;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+/* estilo para la lista de comentarios */
+.commit ul{
+  list-style: none;
+  height: 300px;
+  
+}
+
+.list-style{
+   border-top: 1px solid black;
+   padding:  0 0 0 10px;
+   overflow: auto;
+}
+
+
+.list-style h2{
+    margin: 10px 0;
+    font-size: 25px;
+}
+
+
+.list-style p{
+    margin:  0 0 10px;
+    font-size: 20px;
+}
+
+
+.inv{
+    display: none;
+}

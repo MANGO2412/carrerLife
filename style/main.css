@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font: 6px;
+}
+body{
+    background-image: url(./../mult/images/5594016.jpg);
+}
+
+
+#container{
+  width: 90%;
+  margin: auto;
+  
+}
+
+
+/* estilo de los elementos */
+.menu{
+    background-color: rgb(25, 27, 29);
+    color: aliceblue;
+    margin-bottom: 30px;
+}
+
+.menu h1{
+    padding: 10px;
+    font-size: 50px;
+}
+
+.menu  div{
+    padding: 30px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid aliceblue;
+}
+
+.menu div a{
+    margin-left: 20px;
+    color: aliceblue;
+}
+
+/* elementos del contenido */
+#cont{
+   /* height: 600px; */
+  
+   padding: 10px;
+   
+}
+
+
+.titleCenter{
+    text-align: center;
+}
+
+.textP{
+    font-size: 30px;
+}
+
+
+
+/* estilo para las tarjetas */
+.tabSpace{
+    margin-top: 80px;
+}
+.tarCont{
+    display: grid;
+    grid-template-columns:  1fr  1fr;   
+}
+.cards{
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+}
+
+.cards2{
+    background-color: black;
+    color: aliceblue;
+}
+
+.subCards{
+    width: 300px;
+    height: 300px;
+    margin: auto;
+}
+
+.subCards img{
+    width: 300px;
+    height: 300px;
+
+}
+
+.render{
+    object-fit: cover;
+}
+.render2{
+    object-fit: scale-down;
+}
+
+audio{
+    margin: 0 0 0 25px;
+}
+
+/* border div */
+.subDiv{
+   height: 500px;
+}
+
+.videoCont{
+   width: 60%;
+   margin: auto;
+}
+
+
+/* estilo dpara el footer */
+footer{
+    background-color: rgb(12, 11, 11);
+    padding: 20px;
+    color: aliceblue;
+    font-size: 23px;
+}
+
+
+
+footer div{
+   text-align: center;
+   padding: 20px;
+}
+
+
+footer div ul{
+    list-style: none;
+}
+
+footer div ul li a svg{
+   width: 50px;
+   background-color: aliceblue;
+}
+.line{
+    border-bottom: 1px solid rgb(216, 216, 216);
+}
+
+.format{
+    list-style: none;
+    padding: 20px;
+}
+
+/* responsive design */
+@media (max-width:700px){
+    .tarCont{
+        grid-template-columns: 1fr;
+        
+    }
+    
+    .cards{
+        margin: auto;
+    }
+}
+
+
+
+
+@media (max-width:500px){
+  .textP{
+       font-size: 25px;
+       text-align: center;
+  }
+
+  .cards{
+      width: 350px;
+      height: 350px;
+  }
+
+  .subCards{
+      width: 200px;
+      height: 200px;
+  }
+  .subCards img{
+    width: 200px;
+    height: 200px;
+
+  }
+}
